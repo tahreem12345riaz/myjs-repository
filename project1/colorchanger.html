@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer </title>
+    
+</head>
+<body>
+    <style>
+        .canvas{
+            text-align: center;
+        }
+        /* General reset and body styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white; /* Initial background color */
+}
+
+/* Navigation styling */
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Canvas area styling */
+.canvas {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Heading styles */
+h1, h2 {
+    color: #333;
+}
+
+/* Button styling */
+.button {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid #ccc;
+}
+
+/* Specific button colors */
+#grey {
+    background-color: grey;
+}
+
+#red {
+    background-color: red;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#pink {
+    background-color: pink;
+}
+
+/* Hover effect for buttons */
+.button:hover {
+    opacity: 0.7;
+}
+
+    </style>
+    <nav>
+        <a href="/">HOME</a>
+    </nav>
+    <div class="canvas">
+<h1>Color Changer</h1>
+<span class="button" id="grey "></span>
+<span class="button" id="red "></span>
+<span class="button" id="yellow "></span>
+<span class="button" id="pink "></span>
+<h2>
+    Click on the box to change Color
+</h2>
+<span>To change the background color</span>
+</div>
+<script src="colorchanger.js"></script>
+</body>
+</html>
