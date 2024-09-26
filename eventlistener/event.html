@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENT LISTENER</title>
+</head>
+<body style="background-color: antiquewhite; color: rgb(114, 31, 4);">
+    <h2>OUR WORLD</h2>
+    <div>
+        <ul id="images">
+            <li><img width="300px" src="images/babusar-pass-1663543_640.jpg" id="photoshop"  alt="photoshop"></li>
+            <li><img width="300px" src="imges3.jpg" id="pakistan"  alt="photoshop"></li>
+            <li><img width="300px" src="image2_files/boating-4803017_640.jpg" id="boating"  alt="photoshop"></li>
+            <li><img width="300px" src="image2_files/asia-1296989_640.webp" id="flag"  alt="photoshop"></li>
+            <li><img width="300px" src="image2_files/bridge-961208_640.jpg" id="road"  alt="photoshop"></li>
+
+
+        </ul>
+    </div>
+    <script>
+        ///this is our old appproch of event listener
+        //document.getElementById("photoshop").onclick = function(){
+        //    alert("we click it");
+        //}
+
+        //type, timestamp, defaultprevented
+        //target ,toelement , srcElement , currettarget
+        // altkey . ctrlkey , shiftkey ,keycode 
+// document.getElementById("photoshop").addEventListener('click', function(e){
+// console.log("clicked inside the ul");
+// },false)
+// document.getElementById('pakistan').addEventListener('click',function(e){
+//     console.log("clicked the pakistan");
+//     e.stopPropagation();
+// },false)
+// document.getElementById('road').addEventListener('click',function(e){
+//     console.log("car on the road ");
+//     e.preventDefault ();
+//     console.log("clicked it ");
+    
+// },false)
+// asha code ju sub images ku select kare ...
+document.querySelector('#images').addEventListener('click',function(e){
+    console.log(e.target.tagName);
+    if(e.target.tagName === 'IMG'){
+        console.log(e.target.id);
+        
+    
+    let removeIt = e.target.parentNode;
+    removeIt.remove();
+}  
+})
+
+
+    </script>
+</body>
+</html>
