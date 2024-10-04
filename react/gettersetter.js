@@ -4,10 +4,10 @@ class User{
         this.password = password;
     }
     get password(){
-        return this.password.toUpperCase() 
+        return this._password.toUpperCase() 
      }
      set password(value){
-        this.password=value
+        this._password=value
 
 
 
